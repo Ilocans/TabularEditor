@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2050
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabularEditor", "TabularEditor\TabularEditor.csproj", "{F7588159-3F24-4BFA-A6F6-551657896C34}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -30,6 +30,10 @@ EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TabularEditorInstaller", "TabularEditorInstaller\TabularEditorInstaller.vdproj", "{3CF53981-9965-436B-9805-D6F844C2CE15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOMWrapperTest", "TOMWrapperTest\TOMWrapperTest.csproj", "{546659EE-5DA6-4BAC-BD5E-0D898389201A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlugin2", "MyPlugin\MyPlugin2.csproj", "{EBE2F163-570F-4370-8570-5B01B97E54AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateModel", "UpdateModel\UpdateModel.csproj", "{13804FBD-D210-4854-A6B2-D9B737663572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,14 @@ Global
 		{546659EE-5DA6-4BAC-BD5E-0D898389201A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{546659EE-5DA6-4BAC-BD5E-0D898389201A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{546659EE-5DA6-4BAC-BD5E-0D898389201A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE2F163-570F-4370-8570-5B01B97E54AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE2F163-570F-4370-8570-5B01B97E54AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE2F163-570F-4370-8570-5B01B97E54AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE2F163-570F-4370-8570-5B01B97E54AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13804FBD-D210-4854-A6B2-D9B737663572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13804FBD-D210-4854-A6B2-D9B737663572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13804FBD-D210-4854-A6B2-D9B737663572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13804FBD-D210-4854-A6B2-D9B737663572}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +86,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A7DBA03D-8D25-4868-A1DE-453C8ADE5724} = {4033B9CF-5A9B-40EF-AE72-B2A745EB3CAF}
 		{28244C9C-E8CE-43DF-AB98-500BEE2C03A1} = {4033B9CF-5A9B-40EF-AE72-B2A745EB3CAF}
+		{EBE2F163-570F-4370-8570-5B01B97E54AE} = {4033B9CF-5A9B-40EF-AE72-B2A745EB3CAF}
+		{13804FBD-D210-4854-A6B2-D9B737663572} = {4033B9CF-5A9B-40EF-AE72-B2A745EB3CAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {986C44A6-A2BA-4F65-8CF1-874A4DE16EB5}

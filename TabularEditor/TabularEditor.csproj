@@ -747,7 +747,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 et x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -864,6 +864,10 @@
       <Project>{19dde9a0-227f-4e8b-849d-c91c25322826}</Project>
       <Name>TOMWrapper</Name>
       <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\UpdateModel\UpdateModel.csproj">
+      <Project>{13804fbd-d210-4854-a6b2-d9b737663572}</Project>
+      <Name>UpdateModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

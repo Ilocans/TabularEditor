@@ -30,6 +30,12 @@
 /.vs
 /.vs
 *.suo
+/UpdateModel/bin/Debug
+/UpdateModel/bin/Release
+/UpdateModel/obj/Debug
+/MyPlugin/bin/Debug
+/MyPlugin/bin/Release
+/MyPlugin/obj/Debug
 /PluginTest/bin/Debug
 /PluginTest/obj/Debug
 /PluginTest/obj/Debug

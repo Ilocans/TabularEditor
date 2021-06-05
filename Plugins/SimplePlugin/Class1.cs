@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TabularEditor.TOMWrapper;
+using TabularEditor.TextServices;
 
 namespace PluginTest
 {
@@ -28,7 +29,7 @@ namespace PluginTest
 
         public void SayHello()
         {
-            MessageBox.Show("Hello from plugin!\n\nCurrently loaded model name:" + Handler.Model?.Name);
+            MessageBox.Show("Hello from plugin!\n\nCurrently the loaded model name:" + Handler.Model?.Name);
 
         }
 
