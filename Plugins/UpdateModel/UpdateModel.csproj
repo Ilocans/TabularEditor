@@ -58,7 +58,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TOMWrapper\TOMWrapper.csproj">
+    <ProjectReference Include="..\..\TOMWrapper\TOMWrapper.csproj">
       <Project>{19dde9a0-227f-4e8b-849d-c91c25322826}</Project>
       <Name>TOMWrapper</Name>
     </ProjectReference>

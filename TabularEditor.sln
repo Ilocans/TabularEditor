@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOMWrapperTest", "TOMWrappe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlugin2", "MyPlugin\MyPlugin2.csproj", "{EBE2F163-570F-4370-8570-5B01B97E54AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateModel", "UpdateModel\UpdateModel.csproj", "{13804FBD-D210-4854-A6B2-D9B737663572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateModel", "Plugins\UpdateModel\UpdateModel.csproj", "{13804FBD-D210-4854-A6B2-D9B737663572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

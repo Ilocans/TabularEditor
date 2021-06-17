@@ -30,9 +30,9 @@
 /.vs
 /.vs
 *.suo
-/UpdateModel/bin/Debug
-/UpdateModel/bin/Release
-/UpdateModel/obj/Debug
+/Plugins/UpdateModel/bin/Debug
+/Plugins/UpdateModel/bin/Release
+/Plugins/UpdateModel/obj/Debug
 /MyPlugin/bin/Debug
 /MyPlugin/bin/Release
 /MyPlugin/obj/Debug
