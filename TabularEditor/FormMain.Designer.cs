@@ -184,7 +184,7 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.txtExpression = new UI.Extensions.FCTB.FastColoredTextBox();
+            this.txtExpression = new TabularEditor.UI.Extensions.FCTB.FastColoredTextBox();
             this.lblCurrentMeasure = new System.Windows.Forms.Label();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
@@ -195,7 +195,7 @@
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.cmbExpressionSelector = new System.Windows.Forms.ToolStripComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtAdvanced = new UI.Extensions.FCTB.FastColoredTextBox();
+            this.txtAdvanced = new TabularEditor.UI.Extensions.FCTB.FastColoredTextBox();
             this.toolStrip4 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.btnUndoErrors = new System.Windows.Forms.ToolStripButton();
@@ -739,7 +739,7 @@
             this.toolStripButton8.AutoToolTip = false;
             this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton8.Image = global::TabularEditor.Resources.Open;
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Maroon;
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton8.Text = "From &File...";
@@ -772,7 +772,6 @@
             // exitToolStripMenuItem
             // 
             actionsMain.SetAction(this.exitToolStripMenuItem, this.actExit);
-            this.exitToolStripMenuItem.AutoToolTip = true;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
@@ -884,6 +883,7 @@
             // btnSave
             // 
             actionsMain.SetAction(this.btnSave, this.actSave);
+            this.btnSave.AutoToolTip = false;
             this.btnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnSave.Image = global::TabularEditor.Resources.Save;
             this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -894,6 +894,7 @@
             // saveToolStripMenuItem
             // 
             actionsMain.SetAction(this.saveToolStripMenuItem, this.actSave);
+            this.saveToolStripMenuItem.AutoToolTip = true;
             this.saveToolStripMenuItem.Image = global::TabularEditor.Resources.Save;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+S";
@@ -904,6 +905,7 @@
             // saveAsToolStripMenuItem
             // 
             actionsMain.SetAction(this.saveAsToolStripMenuItem, this.actSaveAs);
+            this.saveAsToolStripMenuItem.AutoToolTip = true;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As...";
@@ -911,7 +913,6 @@
             // undoToolStripMenuItem
             // 
             actionsMain.SetAction(this.undoToolStripMenuItem, this.actUndo);
-            this.undoToolStripMenuItem.AutoToolTip = true;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Z";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
@@ -921,7 +922,6 @@
             // redoToolStripMenuItem
             // 
             actionsMain.SetAction(this.redoToolStripMenuItem, this.actRedo);
-            this.redoToolStripMenuItem.AutoToolTip = true;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Y";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
@@ -950,7 +950,7 @@
             this.displayFoldersToolStripMenuItem.Name = "displayFoldersToolStripMenuItem";
             this.displayFoldersToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+4";
             this.displayFoldersToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
-            this.displayFoldersToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.displayFoldersToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.displayFoldersToolStripMenuItem.Text = "&Display Folders";
             this.displayFoldersToolStripMenuItem.ToolTipText = "Show/hide display folders (Ctrl+4)";
             // 
@@ -963,7 +963,7 @@
             this.hiddenObjectsToolStripMenuItem.Name = "hiddenObjectsToolStripMenuItem";
             this.hiddenObjectsToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+5";
             this.hiddenObjectsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D5)));
-            this.hiddenObjectsToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.hiddenObjectsToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.hiddenObjectsToolStripMenuItem.Text = "&Hidden Objects";
             this.hiddenObjectsToolStripMenuItem.ToolTipText = "Show/hide hidden objects (Ctrl+5)";
             // 
@@ -978,7 +978,7 @@
             this.mEasToolStripMenuItem.Name = "mEasToolStripMenuItem";
             this.mEasToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+1";
             this.mEasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
-            this.mEasToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.mEasToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.mEasToolStripMenuItem.Text = "&Measures";
             this.mEasToolStripMenuItem.ToolTipText = "Show/hide measures (Ctrl+1)";
             // 
@@ -993,7 +993,7 @@
             this.xToolStripMenuItem.Name = "xToolStripMenuItem";
             this.xToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+2";
             this.xToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
-            this.xToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.xToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.xToolStripMenuItem.Text = "&Columns";
             this.xToolStripMenuItem.ToolTipText = "Show/hide columns (Ctrl+2)";
             // 
@@ -1008,7 +1008,7 @@
             this.yToolStripMenuItem.Name = "yToolStripMenuItem";
             this.yToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+3";
             this.yToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
-            this.yToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.yToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.yToolStripMenuItem.Text = "H&ierarchies";
             this.yToolStripMenuItem.ToolTipText = "Show/hide hierarchies (Ctrl+3)";
             // 
@@ -1020,27 +1020,27 @@
             this.metadataInformationToolStripMenuItem.Name = "metadataInformationToolStripMenuItem";
             this.metadataInformationToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+F1";
             this.metadataInformationToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.metadataInformationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.metadataInformationToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.metadataInformationToolStripMenuItem.Text = "Meta&data Information";
             this.metadataInformationToolStripMenuItem.ToolTipText = "Show/hide metadata information columns (Ctrl+F1)";
             // 
             // expandAllToolStripMenuItem
             // 
             actionsMain.SetAction(this.expandAllToolStripMenuItem, this.actExpandAll);
-            this.expandAllToolStripMenuItem.AutoToolTip = true;
             this.expandAllToolStripMenuItem.Image = global::TabularEditor.Resources.ExpandAll;
             this.expandAllToolStripMenuItem.Name = "expandAllToolStripMenuItem";
             this.expandAllToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+Right";
-            this.expandAllToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.expandAllToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.expandAllToolStripMenuItem.Text = "&Expand All";
             // 
             // collapseAllToolStripMenuItem
             // 
             actionsMain.SetAction(this.collapseAllToolStripMenuItem, this.actCollapseAll);
+            this.collapseAllToolStripMenuItem.AutoToolTip = true;
             this.collapseAllToolStripMenuItem.Image = global::TabularEditor.Resources.CollapseAll;
             this.collapseAllToolStripMenuItem.Name = "collapseAllToolStripMenuItem";
             this.collapseAllToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+Left";
-            this.collapseAllToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.collapseAllToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.collapseAllToolStripMenuItem.Text = "C&ollapse All";
             // 
             // toolStripButton9
@@ -1147,7 +1147,7 @@
             // btnSaveCustomAction
             // 
             actionsMain.SetAction(this.btnSaveCustomAction, this.actSaveCustomAction);
-            this.btnSaveCustomAction.AutoToolTip = true;
+            this.btnSaveCustomAction.AutoToolTip = false;
             this.btnSaveCustomAction.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnSaveCustomAction.Image = global::TabularEditor.Resources.add;
             this.btnSaveCustomAction.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1223,7 +1223,7 @@
             this.showAllObjectTypesToolStripMenuItem.Name = "showAllObjectTypesToolStripMenuItem";
             this.showAllObjectTypesToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+F3";
             this.showAllObjectTypesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3)));
-            this.showAllObjectTypesToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.showAllObjectTypesToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.showAllObjectTypesToolStripMenuItem.Text = "&Show All Object Types";
             this.showAllObjectTypesToolStripMenuItem.ToolTipText = "Show/hide all object types (perspectives, roles, data sources, etc.) in addition " +
     "to tables (Ctrl+F3)";
@@ -1255,7 +1255,7 @@
             this.sortAlphabeticalToolStripMenuItem.Name = "sortAlphabeticalToolStripMenuItem";
             this.sortAlphabeticalToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+F2";
             this.sortAlphabeticalToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
-            this.sortAlphabeticalToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.sortAlphabeticalToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.sortAlphabeticalToolStripMenuItem.Text = "Sort &alphabetically";
             this.sortAlphabeticalToolStripMenuItem.ToolTipText = "Toggle alphabetical/metadata ordering of items (Ctrl+F2)";
             // 
@@ -1287,7 +1287,6 @@
             // saveToFolderToolStripMenuItem
             // 
             actionsMain.SetAction(this.saveToFolderToolStripMenuItem, this.actSaveToFolder);
-            this.saveToFolderToolStripMenuItem.AutoToolTip = true;
             this.saveToFolderToolStripMenuItem.Name = "saveToFolderToolStripMenuItem";
             this.saveToFolderToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.saveToFolderToolStripMenuItem.Text = "Save to &Folder...";
@@ -1344,17 +1343,19 @@
             // expandFromHereToolStripMenuItem
             // 
             actionsMain.SetAction(this.expandFromHereToolStripMenuItem, this.actExpandFromHere);
+            this.expandFromHereToolStripMenuItem.AutoToolTip = true;
             this.expandFromHereToolStripMenuItem.Name = "expandFromHereToolStripMenuItem";
             this.expandFromHereToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Right";
-            this.expandFromHereToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.expandFromHereToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.expandFromHereToolStripMenuItem.Text = "&Expand Here";
             // 
             // collapseHereToolStripMenuItem
             // 
             actionsMain.SetAction(this.collapseHereToolStripMenuItem, this.actCollapseFromHere);
+            this.collapseHereToolStripMenuItem.AutoToolTip = true;
             this.collapseHereToolStripMenuItem.Name = "collapseHereToolStripMenuItem";
             this.collapseHereToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Left";
-            this.collapseHereToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.collapseHereToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.collapseHereToolStripMenuItem.Text = "Collapse Here";
             // 
             // commentToolStripMenuItem
@@ -1542,6 +1543,7 @@
             // bestPracticeAnalyzerToolStripMenuItem
             // 
             actionsMain.SetAction(this.bestPracticeAnalyzerToolStripMenuItem, this.actOpenBPA);
+            this.bestPracticeAnalyzerToolStripMenuItem.AutoToolTip = true;
             this.bestPracticeAnalyzerToolStripMenuItem.Image = global::TabularEditor.Resources.clipboard_16;
             this.bestPracticeAnalyzerToolStripMenuItem.Name = "bestPracticeAnalyzerToolStripMenuItem";
             this.bestPracticeAnalyzerToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F10;
@@ -1580,14 +1582,13 @@
             // btnDeleteCustomAction
             // 
             actionsMain.SetAction(this.btnDeleteCustomAction, this.actDeleteCustomAction);
-            this.btnDeleteCustomAction.AutoToolTip = true;
+            this.btnDeleteCustomAction.AutoToolTip = false;
             this.btnDeleteCustomAction.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnDeleteCustomAction.Image = global::TabularEditor.Resources.Delete;
             this.btnDeleteCustomAction.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteCustomAction.Name = "btnDeleteCustomAction";
             this.btnDeleteCustomAction.Size = new System.Drawing.Size(23, 22);
             this.btnDeleteCustomAction.Text = "Delete current Custom Action";
-            this.btnDeleteCustomAction.ToolTipText = "Delete current Custom Action";
             // 
             // preferencesToolStripMenuItem
             // 
@@ -1652,7 +1653,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(68, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(67, 22);
             this.toolStripLabel2.Text = "Translation:";
             // 
             // cmbTranslation
@@ -1669,9 +1670,10 @@
             // 
             // txtFilter
             // 
+            this.txtFilter.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFilter.MaxLength = 0;
             this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(385, 25);
+            this.txtFilter.Size = new System.Drawing.Size(386, 25);
             this.txtFilter.ToolTipText = "Filter objects by name. Put a \':\' as the first character to filter using Dynamic " +
     "LINQ";
             this.txtFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFilter_KeyDown);
@@ -1939,6 +1941,7 @@
             this.txtExpression.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtExpression.Enabled = false;
             this.txtExpression.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.txtExpression.ImeMode = System.Windows.Forms.ImeMode.On;
             this.txtExpression.IsReplaceMode = false;
             this.txtExpression.Location = new System.Drawing.Point(3, 46);
             this.txtExpression.Name = "txtExpression";
@@ -1948,7 +1951,6 @@
             this.txtExpression.Size = new System.Drawing.Size(644, 198);
             this.txtExpression.TabIndex = 23;
             this.txtExpression.Zoom = 100;
-            this.txtExpression.ImeMode = System.Windows.Forms.ImeMode.On;
             // 
             // lblCurrentMeasure
             // 
@@ -2070,6 +2072,8 @@
             this.txtAdvanced.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAdvanced.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.txtAdvanced.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAdvanced.Font = new System.Drawing.Font("Courier New", 9.75F);
+            this.txtAdvanced.ImeMode = System.Windows.Forms.ImeMode.On;
             this.txtAdvanced.IsReplaceMode = false;
             this.txtAdvanced.Language = FastColoredTextBoxNS.Language.CSharp;
             this.txtAdvanced.LeftBracket = '(';
@@ -2085,7 +2089,6 @@
             this.txtAdvanced.TabIndex = 16;
             this.txtAdvanced.Zoom = 100;
             this.txtAdvanced.ZoomChanged += new System.EventHandler(this.txtAdvanced_ZoomChanged);
-            this.txtAdvanced.ImeMode = System.Windows.Forms.ImeMode.On;
             // 
             // toolStrip4
             // 
@@ -2452,22 +2455,22 @@
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(234, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(233, 6);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(234, 6);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(233, 6);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(234, 6);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(233, 6);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(234, 6);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(233, 6);
             // 
             // modelToolStripMenuItem
             // 
@@ -2498,7 +2501,7 @@
             this.bestPracticeAnalyzerToolStripMenuItem,
             this.manageBPARulesToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.toolsToolStripMenuItem.Text = "T&ools";
             // 
             // manageBPARulesToolStripMenuItem
