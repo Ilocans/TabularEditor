@@ -860,14 +860,14 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Plugins\UpdateModel\UpdateModel.csproj">
+      <Project>{13804fbd-d210-4854-a6b2-d9b737663572}</Project>
+      <Name>UpdateModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TOMWrapper\TOMWrapper.csproj">
       <Project>{19dde9a0-227f-4e8b-849d-c91c25322826}</Project>
       <Name>TOMWrapper</Name>
       <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\UpdateModel\UpdateModel.csproj">
-      <Project>{13804fbd-d210-4854-a6b2-d9b737663572}</Project>
-      <Name>UpdateModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
